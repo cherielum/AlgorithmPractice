@@ -17,4 +17,3 @@ var removeDuplicates = function(nums) {
      }
   }
 };
-
