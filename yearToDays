@@ -1,0 +1,22 @@
+public class yearToDays {
+	//create a calcAge class 
+	//requires a number inside 
+	public static int calcAge(int num) {
+		//to convert year to days must multiply by 366
+		return num * 365;
+	}
+	//print age based on number
+	public static void main(String Args[]) {
+		System.out.println(calcAge(65));
+		System.out.println(calcAge(0));
+		System.out.println(calcAge(20));
+	}
+}
+
+//big o notation evaluation 
+//how many lines are run 
+//1 	1 
+//4 	1
+//6 	1
+//10	1
+//1 + 1 + 1 + 1 = 4 or 1, O(1)
