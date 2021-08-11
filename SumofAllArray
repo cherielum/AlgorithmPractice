@@ -1,0 +1,22 @@
+public class SumofAllArray {
+	public static int arraySum(int[] arr) {
+		int sumOfNums = arr[0];
+		sumOfNums = arr[0] + arr[1] + arr[2];
+		return sumOfNums;
+	}
+	public static void main (String[] args) {
+		System.out.println(arraySum(new int[] {2,7,4}));
+		System.out.println(arraySum(new int[] {45,3,0}));
+		System.out.println(arraySum(new int[] {-2, 84, 23}));
+	}
+}
+
+//Big O notation analysis
+// 1 1
+// 2 1
+// 3 1
+// 4 1
+// 5 1
+// 7 1
+// 8 1
+// 1(7) = 7 or O(1)
