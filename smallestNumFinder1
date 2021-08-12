@@ -1,0 +1,27 @@
+public class smallestNumFinder {
+	public static int smallestNumber(int[] arr) {
+		int smallestNumber = arr[0];
+		if (arr[0] < arr[1] && arr[0] < arr[2] && arr[0] < arr[3]) {
+			return smallestNumber = arr[0];
+		} 
+		else if (arr[1] < arr[0] && arr[1] < arr[2] && arr[1] < arr[3]) {
+			return smallestNumber = arr[1];
+		}
+		else if (arr[2] < arr[0] && arr[2] < arr[1] && arr[2] < arr[0]) {
+			return smallestNumber = arr[2];
+		}
+		else if (arr[3] < arr[0] && arr[3] < arr[1] && arr[3] < arr[1]) {
+			return smallestNumber = arr[3];
+		}
+		else 
+			return smallestNumber ;
+		}
+		
+	public static void main (String args[]) {
+		System.out.println(smallestNumber(new int[] { 34, 15, 88, 2} ));
+		System.out.println(smallestNumber(new int[] { 34, -345, -1, 100} ));
+		System.out.println(smallestNumber(new int[] { 7, 7, 7, 7}));
+	}
+}
+// Need to return to fix this for when there isn't just 4 items in an array.
+//Big O Notation here would be O(1), but to make it efficient it needs to be O(n) or O(n^2).
