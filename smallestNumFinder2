@@ -1,0 +1,29 @@
+public class smallestNumFinder {
+	public static int smallestNumber(int[] arr) {
+		
+		//declare a number the smallest at first or first element in array
+		int smallestNumber = arr[0];
+		
+		//for every smallest number check if next number is smaller
+		for (int n = 0; n < arr.length; n++) {
+			int nextNum = arr[n];
+			//if the current smallest number is larger than the next
+			//the next element in the array is declared the smallest
+			if (smallestNumber > nextNum) {
+				smallestNumber = nextNum;
+			}
+		}
+		return smallestNumber;
+}		
+		
+	public static void main (String args[]) {
+		System.out.println(smallestNumber(new int[] { 34, 15, 88, 2} ));
+		System.out.println(smallestNumber(new int[] { 34, -345, -1, 100} ));
+		System.out.println(smallestNumber(new int[] { 7, 7, 7, 7}));
+	}
+}
+
+//Observations for the Big O 
+//1 + 1 + 1 + 1 + 4 + 1 + 1 
+//6 + 4(n)
+//O(n)
