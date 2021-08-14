@@ -1,0 +1,29 @@
+//Attempting to do Sum of All Array but more dynamic with O(n)
+public class sumOfAllArray2 {
+	public static int arraySum(int[] array) {
+		//declare smallest number to be zero but doesn't really matter what
+		int totalSum = 0;
+		
+		//for every element in the array add to totalSum  
+		for (int i=0; i <array.length; i++) {
+			totalSum = totalSum + array[i];
+		}
+		return totalSum;
+	}
+	
+	public static void main (String args[]) {
+		System.out.println(arraySum(new int[] {2, 7, 4} ));
+		System.out.println(arraySum(new int[] {45, 3, 0} ));
+		System.out.println(arraySum(new int[] {-2, 84, 23} ));
+		System.out.println(arraySum(new int[] {2, 2, 2}));
+		System.out.println(arraySum(new int[] {1, 2, 1} ));
+		System.out.println(arraySum(new int[] { } ));
+		System.out.println(arraySum(new int[] {4, 1} ));
+		System.out.println(arraySum(new int[] {1, -2, -1} ));
+	}
+}
+
+//Big O here is now O(n) and includes one for loop
+//this makes it more dynamic than manually each array like last algorithm I created
+//The last one it mattered how many elements there were 
+//This one can have 3, 4, or 1 element in an array and it'll still add the total sum
