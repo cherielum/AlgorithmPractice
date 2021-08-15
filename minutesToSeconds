@@ -1,20 +1,26 @@
-public class minutesToSeconds (minutes) {
+public class minutesToSeconds {
+	public static int convertToSeconds(int minutes) {
 		int seconds;
-		int minutes;
 		seconds = minutes * 60;
+		return seconds;
+	}
+	
+	public static void main (String args[]) {
+		System.out.println(convertToSeconds(2));
+	}
 }
 
 //Solution to interacting with user
-import java.util.Scanner;
+//import java.util.Scanner;
 
-public class addUp {
-	public static void main(String[] arg)
-	{
-		int min,sec;
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Minutes");
-		min=sc.nextInt();
-		sec=min*60;
-		System.out.println("There are " + sec + " seconds in " + min + " minutes.");
-	}
-}
+//public class addUp {
+//	public static void main(String[] arg)
+//	{
+//		int min,sec;
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("Enter Minutes");
+//		min=sc.nextInt();
+//		sec=min*60;
+//		System.out.println("There are " + sec + " seconds in " + min + " minutes.");
+//	}
+//}
