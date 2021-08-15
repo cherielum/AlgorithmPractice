@@ -3,3 +3,18 @@ public class minutesToSeconds (minutes) {
 		int minutes;
 		seconds = minutes * 60;
 }
+
+//Solution to interacting with user
+import java.util.Scanner;
+
+public class addUp {
+	public static void main(String[] arg)
+	{
+		int min,sec;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Minutes");
+		min=sc.nextInt();
+		sec=min*60;
+		System.out.println("There are " + sec + " seconds in " + min + " minutes.");
+	}
+}
