@@ -1,0 +1,15 @@
+public class calcAge{
+	public static int calcAgeDays(int age) {
+	age = age * 365;
+	return age;
+}
+
+	public static void main (String args[]) {
+		System.out.println(calcAgeDays(65));
+		System.out.println(calcAgeDays(0));
+		System.out.println(calcAgeDays(20));
+	}
+}
+
+//Big O 
+// O(1)
