@@ -1,0 +1,19 @@
+//Basketball points 
+//2pointers for first and 3pointers for second
+
+
+public class baseketballPoint {
+	public static int basketballPointCounter(int twoPointer, int threePointer) {
+		return ((twoPointer * 2) + (threePointer *3));  
+	}
+	
+
+	public static void main (String args[]) {
+	System.out.println(basketballPointCounter(1, 1));
+	System.out.println(basketballPointCounter(7, 5));
+	System.out.println(basketballPointCounter(38, 8));
+	}
+}
+
+//BigO
+//O(1) 
