@@ -1,0 +1,33 @@
+//Is Unique: Implement an algorithm to determine if a string has all unique character. 
+
+//1.compare first element in string to all other letters in string, compare second element in string to all, repeat 
+//2. sort string, if there are duplicates, string is not a unique character 
+//3. put first element of string in a dictionary, continue to do so unless it is already in dictionary until looping through whole string
+
+public class characterDecipherProgram {
+  public static boolean characterDecipher(String word) {
+    boolean uniqueString = true; 
+    for(int i = 1; i < word.length(); i++) {
+      for(int j = 0; j < i; j++ ) {
+        if ( word.charAt(j) == word.charAt(i) ) {
+          uniqueString = false;
+        }
+      }
+    }
+    return uniqueString;
+  }
+
+  public static void main(String args[]) {
+    System.out.println(characterDecipher("hello"));
+    System.out.println();
+    System.out.println(characterDecipher("cherie"));
+    System.out.println();
+    System.out.println(characterDecipher("just awesome"));
+    System.out.println();
+    System.out.println(characterDecipher("simply"));
+  }
+}
+
+//Big O
+//1, 1, n * n, 1, 1
+//O(n^2)
