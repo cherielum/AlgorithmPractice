@@ -1,0 +1,15 @@
+//make a function to concatenate a passed string name with string “edabit” and store in result 
+
+public class basicVariable {
+	static String result = "";
+	public static String nameString(String name) {
+		 return result = name + "Edabit";
+	}
+	public static void main (String args[]) {
+		System.out.println(nameString("Mubashir"));
+		System.out.println(nameString("Matt"));
+		System.out.println(nameString("java"));
+	}
+}
+
+//O(1) Notation
