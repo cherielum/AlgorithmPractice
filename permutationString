@@ -1,0 +1,45 @@
+//check permutation: given two strings, write a method to decide if one is a permutation of the other. 
+//permutation: a way, especially one of several possible variations, in which a set or number of things can be ordered or arranged.
+
+import java.util.*; 
+import java.util.Arrays;
+
+public class permutation {
+	public static boolean arePermutation(String str1, String str2) {
+		boolean permutation = true; 
+		//get length of both strings
+		int first = str1.length();
+		int second = str2.length();
+			
+		//if length of both strings is not the same not permutation
+		if (first != second) {
+			permutation = false;
+		}
+		char ch1[] = str1.toCharArray();
+		char ch2[] = str2.toCharArray();
+		
+		//Sort both strings
+		Arrays.sort(ch1);
+		Arrays.sort(ch2);
+		
+		//compare sorted strings 
+		for (int i = 0; i < first; i++) {
+			if(ch1[i] != ch2[i])
+				return permutation = false;
+		
+		}
+		return permutation;
+
+	}
+	
+	public static void main (String args[]) {
+		System.out.println(arePermutation("french", "frehcn"));
+		System.out.println(arePermutation("french", "frwnch"));
+		System.out.println(arePermutation("french", "dog"));
+		System.out.println(arePermutation("god", "dog"));
+	}
+}
+
+
+//Big O
+//O(n)
