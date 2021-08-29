@@ -1,0 +1,46 @@
+//spit our max and min numbers from an array
+public class minMaxNumbers {
+	public static int[] minMaxMethod(int[] array) {
+		
+		//declare smallest number to compare to next
+		int smallestNumber = array[0];
+		int greatestNumber = array[0];
+		
+		//loop through to check for smallest
+		for (int i = 0; i < array.length; i++) {
+			int nextNumber = array[i]; 
+			if (nextNumber > greatestNumber)  {
+				greatestNumber = nextNumber;
+			}
+			if (smallestNumber > nextNumber) {
+				smallestNumber = nextNumber;
+			}
+		}
+		
+		
+		int[] result = {smallestNumber, greatestNumber};
+		return result;
+	} 
+	
+	
+	public static void main (String args[]) {
+		int[] resultVariable = minMaxMethod(new int[] {1, 2, 3, 4, 5});
+		for (int i = 0; i < resultVariable.length; i++) {
+			System.out.println(resultVariable[i]);
+		}
+		
+		int[] resultVariable2 = minMaxMethod(new int[] {2334454, 5});
+		for (int i = 0; i < resultVariable2.length; i++) {
+			System.out.println(resultVariable2[i]);
+		}
+
+		int[] resultVariable3 = minMaxMethod(new int[] {1});
+		for (int i = 0; i < resultVariable3.length; i++) {
+			System.out.println(resultVariable3[i]);
+		}
+	}
+	
+}
+
+//Big O Notation
+//O(n)
