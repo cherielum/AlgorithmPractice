@@ -1,0 +1,18 @@
+//Return the Next Number from the Integer Passed
+
+public class nextNum {
+
+	public static int nextNumber(int num) {
+		int numberNext = num + 1;
+		return numberNext;
+	}
+	
+	
+	public static void main (String args[]) {
+		System.out.println(nextNumber(0));
+		System.out.println(nextNumber(9));
+		System.out.println(nextNumber(-3));
+	}
+}
+
+//Big O (O(1))
