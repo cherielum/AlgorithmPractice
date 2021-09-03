@@ -1,0 +1,13 @@
+//Write code to remove duplicates from an unsorted linked list. 
+import java.util.HashSet;
+
+public class removeDup {
+	public static int[] noDups (int[] array) {
+		//sort list
+		
+		//loop through and if current character (i+1) equals the next remove
+		
+		
+		return array;
+	}
+}
