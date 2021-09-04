@@ -2,12 +2,29 @@
 import java.util.HashSet;
 
 public class removeDup {
+	 static Node head;
+	 
 	public static int[] noDups (int[] array) {
-		//sort list
 		
-		//loop through and if current character (i+1) equals the next remove
-		
-		
+		 
+		    static class Node {
+		 
+		        int data;
+		        Node next;
+		 
+		        Node(int d)
+		        {
+		            data = d;
+		            next = null;
+		        }
+		    }
+		    
+		    void remove_duplicates()
+		    {
+		        Node ptr1 = null, ptr2 = null, dup = null;
+		        ptr1 = head;
+		 
+
 		return array;
 	}
 }
