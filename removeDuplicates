@@ -28,3 +28,10 @@ public class removeDup {
 		return array;
 	}
 }
+
+
+//Things learning right now..
+//<ArrayList> is hybrid between array and list
+//There are queues and stacks
+//Stacks mean you put something in (push) and take things out from the top (pop).
+//Queues mean you put something in from the back (queue) and you take things out from the front (dequeue).
