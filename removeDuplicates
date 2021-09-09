@@ -35,3 +35,7 @@ public class removeDup {
 //There are queues and stacks
 //Stacks mean you put something in (push) and take things out from the top (pop).
 //Queues mean you put something in from the back (queue) and you take things out from the front (dequeue).
+
+//Learned today
+//When you eliminate a node, you bypass it all together and the one you skip goes to the trash.
+
