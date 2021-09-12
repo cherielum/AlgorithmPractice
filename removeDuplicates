@@ -39,3 +39,4 @@ public class removeDup {
 //Learned today
 //When you eliminate a node, you bypass it all together and the one you skip goes to the trash.
 
+//Nodes are predefined functions 
