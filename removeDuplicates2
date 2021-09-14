@@ -1,0 +1,22 @@
+//Write code to remove duplicates from an unsorted linked list. 
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public class removeDup {
+	void removeDuplicates ( LinkedListNode start) {
+		//Hash to store seen values
+		HashSet<Integer> set = new HashSet<Integer>();
+		LinkedListNode previous = null;
+		while (start != null) {
+			if(set.contains(start.data)) {
+				previous.next = start.next;
+			} else {
+				set.add(start.data);
+				previous = start;
+			}
+			start = start.next;
+		}  
+	}
+}
+	
+//O notation is O(n) where n is number of elements in the linked list
