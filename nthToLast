@@ -1,0 +1,41 @@
+//Implement an algorithm to find the kth to last element of a singly linked list.
+//1 -> 2 -> 3 -> 4 -> 5 -> null 
+//example
+// n = 1; output = 4
+
+//Represent a node of singly linked list    
+class Node{    
+    int data;    
+    Node next;    
+        
+    public Node(int data) {    
+        this.data = data;    
+        this.next = null;    
+    }    
+}    
+
+public class lastElement {
+	int value;
+	Node next;
+	
+	public Node nToLast(Node node, int n) {
+		Node current = node;
+		Node follower = node;
+		
+		for (int i = 0; i <n; i++) {
+			if (current == null) {
+				return null;
+//				current = current.next;
+			}
+		}
+		while (current.next != null) {
+			current = current.next;
+			follower = follower.next;
+		}
+		return follower;
+	}
+	
+	public static void main (String args[] ) {
+		System.out.println(new nToLast(node, 4));
+	}
+}
