@@ -1,0 +1,24 @@
+//Given a non-empty array of integers nums, every element appears twice except for one. Find single one.
+//Implement a solution with a linear runtime complexity and use only constant extra space. 
+
+//Initial Brainstorm
+//1) sort all numbers, 
+//2) if first number != next number (ie. index[0] == index[0] + 1)  return index[0]
+//3 if first number != next number, return index[length -1] 
+
+//then learned about XOR 
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int length = nums.length;
+        int singleNumber = nums[0];
+        
+        for(int i=1; i<length; i++) 
+        {
+            singleNumber = singleNumber ^nums[i];
+        }
+        return singleNumber;
+        
+    }
+  
+}
